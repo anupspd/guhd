@@ -14,5 +14,5 @@
     
   </p>
 
-<%= link_to "Forgot Password" %>
+<%= link_to "FOrgot Password" %>
 </form>
