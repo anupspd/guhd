@@ -23,10 +23,6 @@
     <%= f.label :phone %><br>
     <%= f.text_field :phone %>
   </div>
-<div class="field">
-    <%= f.label :department %><br>
-    <%= f.text_field :department %>
-  </div>
   <div class="field">
     <%= f.label :address %><br>
     <%= f.text_field :address %>
