@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 20140929043556) do
     t.datetime "updated_at"
   end
 
+  create_table "names", force: true do |t|
+    t.string   "email"
+    t.string   "phone"
+    t.string   "address"
+    t.string   "dept"
+    t.string   "designation"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
