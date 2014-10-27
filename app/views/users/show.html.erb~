@@ -19,10 +19,7 @@
   <strong>Address:</strong>
   <%= @user.address %>
 </p>
-<p>
-  <strong>Department:</strong>
-  <%= @user.department %>
-</p>
+
 <p>
   <strong>Designation:</strong>
   <%= @user.designation %>
