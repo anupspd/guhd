@@ -1,37 +1,25 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "Goa University", 'www.unigoa.ac.in', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav pull-right">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "Register",   '#' %></li>
-            <li><%= link_to "Log in", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="container">
-      <%= yield %>
-    </div>
 
+<%= form_tag :class => 'form-signin'%>
 
 <h1>GOA UNIVERSITY</h1>
-<h2>HELP DESK</h2>
-<p>Log In</p>
-
-<%= form_tag %>
+<h1>HELP DESK</h1>
+<h2 class="form-signin-heading">Please sign in</h2>
   <p>
    Username<br />
-    <%= text_field "username", "name" %>
+    <%= text_field "username", "name" , "class" => "form-control" , "placeholder" => "Username"%>
   </p>
   <p>
     Password:<br />
-    <%= password_field "password", "name" %>
+    <%= password_field "password", "name" , "class" => "form-control" , "placeholder" => "Password"%>
   </p>
   <p>
-    <%= submit_tag("Sign In") %>   
+    <%= submit_tag("Sign In") :class => "btn btn-lg btn-primary btn-block" %>   
     
   </p>
 
 <%= link_to "Forgot Password" %>
 </form>
+
+
+<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
