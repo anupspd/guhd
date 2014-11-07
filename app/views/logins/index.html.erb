@@ -4,16 +4,14 @@
 <h1>GOA UNIVERSITY</h1>
 <h1>HELP DESK</h1>
 <h2 class="form-signin-heading">Please sign in</h2>
-  <p>
-   Username<br />
-    <%= text_field "username", "name" , "class" => "form-control" , "placeholder" => "Username"%>
-  </p>
-  <p>
-    Password:<br />
-    <%= password_field "password", "name" , "class" => "form-control" , "placeholder" => "Password"%>
-  </p>
   
-    <%= submit_tag "Sign In" %>   
+  
+    <%= text_field "username", "name" , "class" => "form-control" , "placeholder" => "Username"%>
+ 
+    <%= password_field "password", "name" , "class" => "form-control" , "placeholder" => "Password"%>
+  
+  
+    <%= submit_tag "Sign In" , "class" => "btn btn-lg btn-primary btn-block"%>   
     
   
 
