@@ -1,3 +1,22 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <%= link_to "Goa University", 'www.unigoa.ac.in', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav pull-right">
+            <li><%= link_to "Home",   '#' %></li>
+            <li><%= link_to "Register",   '#' %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+
+<h1>GOA UNIVERSITY</h1>
+<h2>HELP DESK</h2>
 <p>Log In</p>
 
 <%= form_tag %>
