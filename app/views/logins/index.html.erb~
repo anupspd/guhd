@@ -1,9 +1,9 @@
 
-<%= form_tag "class" => 'form-signin'%>
+<%= form_tag "class" => "form-signin"%>
 
-<h1>GOA UNIVERSITY</h1>
-<h1>HELP DESK</h1>
-<h2 class="form-signin-heading">Please sign in</h2>
+<h1 class="text-center">GOA UNIVERSITY</h1>
+<h1 class="text-center">HELP DESK</h1>
+<h2 class="form-signin-heading text-center">Please sign in</h2>
   
   
     <%= text_field "username", "name" , "class" => "form-control" , "placeholder" => "Username"%>
