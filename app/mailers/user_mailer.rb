@@ -5,5 +5,7 @@ class UserMailer < ActionMailer::Base
     @user = user
     @url  = 'http://example.com/login'
     mail(to: @user.email, subject: 'Your GU Help desk credentials')
+    
+    
   end
 end
