@@ -1,5 +1,5 @@
-
-<%= form_tag "class" => "form-signin"%>
+<div class="form-signin">
+<%= form_tag %>
 
 <h1 class="text-center">GOA UNIVERSITY</h1>
 <h1 class="text-center">HELP DESK</h1>
