@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141107064052) do
+ActiveRecord::Schema.define(version: 20141107201802) do
 
   create_table "complaints", force: true do |t|
     t.string   "username"
