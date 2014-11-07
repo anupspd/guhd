@@ -1,5 +1,5 @@
 
-<%= form_tag :class => 'form-signin'%>
+<%= form_tag "class" => 'form-signin'%>
 
 <h1>GOA UNIVERSITY</h1>
 <h1>HELP DESK</h1>
@@ -7,17 +7,15 @@
   
   
     <%= text_field "username", "name" , "class" => "form-control" , "placeholder" => "Username"%>
- 
+ <br/>
     <%= password_field "password", "name" , "class" => "form-control" , "placeholder" => "Password"%>
   
   
-    <%= submit_tag "Sign In" %>   
+    <%= submit_tag "Sign In" , "class" => "btn btn-lg btn-primary btn-block"%>   
     
   
 
 <%= link_to "Forgot Password" %>
 </form>
 
-
-<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
 
