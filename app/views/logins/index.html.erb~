@@ -1,4 +1,4 @@
-<div class="form-signin">
+<div class="form-signin text-center">
 <%= form_tag %>
 
 <h1 class="text-center">GOA UNIVERSITY</h1>
@@ -17,5 +17,6 @@
 
 <%= link_to "Forgot Password" %>
 </form>
+</div>
 
 
