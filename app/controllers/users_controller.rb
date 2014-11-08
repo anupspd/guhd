@@ -26,7 +26,7 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-    @login = Login.new({:Username => @user.email, :Password => @user.name + "#123"})
+    @login = Login.new({:email => @user.email, :Password => @user.name + "#123"})
     
   respond_to do |format|
      

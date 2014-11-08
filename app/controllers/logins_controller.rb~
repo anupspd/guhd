@@ -8,7 +8,7 @@ class LoginsController < ApplicationController
  end
 
  def create
-  @login = Login.new(Array.new("aditya" ,"123"))
+  @login = Login.new(user_params)
 
     respond_to do |format|
       @login.save
