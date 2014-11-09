@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141109093658) do
+ActiveRecord::Schema.define(version: 20141109133417) do
 
   create_table "car_res", force: true do |t|
     t.string   "reservation_id"
@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 20141109093658) do
   end
 
   create_table "reservations", force: true do |t|
-    t.string   "type"
+    t.string   "res_type"
     t.string   "purpose"
     t.string   "noOfPpl"
     t.string   "from_date"
