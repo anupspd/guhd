@@ -1,0 +1,45 @@
+<%= form_for(@gh_re) do |f| %>
+  <% if @gh_re.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gh_re.errors.count, "error") %> prohibited this gh_re from being saved:</h2>
+
+      <ul>
+      <% @gh_re.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :reservation_id %><br>
+    <%= f.text_field :reservation_id %>
+  </div>
+  <div class="field">
+    <%= f.label :guestType %><br>
+    <%= f.text_field :guestType %>
+  </div>
+  <div class="field">
+    <%= f.label :guestName %><br>
+    <%= f.text_field :guestName %>
+  </div>
+  <div class="field">
+    <%= f.label :guestSex %><br>
+    <%= f.text_field :guestSex %>
+  </div>
+  <div class="field">
+    <%= f.label :guestAge %><br>
+    <%= f.text_field :guestAge %>
+  </div>
+  <div class="field">
+    <%= f.label :guestEMail %><br>
+    <%= f.text_field :guestEMail %>
+  </div>
+  <div class="field">
+    <%= f.label :guestPhone %><br>
+    <%= f.text_field :guestPhone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

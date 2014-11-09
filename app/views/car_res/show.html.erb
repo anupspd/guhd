@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reservation:</strong>
+  <%= @car_re.reservation_id %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @car_re.source %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @car_re.destination %>
+</p>
+
+<%= link_to 'Edit', edit_car_re_path(@car_re) %> |
+<%= link_to 'Back', car_res_path %>

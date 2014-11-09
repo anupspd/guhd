@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :gh_res
+
+  resources :hall_res
+
+  resources :car_res
+
+  resources :reservations
+
   resources :complaints
 
   resources :logins

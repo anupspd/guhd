@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reservation:</strong>
+  <%= @hall_re.reservation_id %>
+</p>
+
+<p>
+  <strong>Hall:</strong>
+  <%= @hall_re.hall %>
+</p>
+
+<%= link_to 'Edit', edit_hall_re_path(@hall_re) %> |
+<%= link_to 'Back', hall_res_path %>

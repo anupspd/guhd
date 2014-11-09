@@ -1,0 +1,2 @@
+module CarResHelper
+end
