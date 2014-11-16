@@ -6,6 +6,9 @@ class LoginsController < ApplicationController
  def new
     @login = Login.new
  end
+ def show
+  @user = Login.find(params[:id])
+ end
 
  def create
   @login = Login.new(user_params)
@@ -15,13 +18,17 @@ class LoginsController < ApplicationController
     end
  end
 
- def destroy
-  @login.destroy
-  respond_to do |format|
-  format.html { redirect_to users_url, notice: 'User successfully destroyed.' }
-  format.json { head :no_content }
-  end
- end
+
+#def checkLogin
+ #   @log=Login.find_by email: @login.email
+  #  if @log.Password == user_params.Password   
+   #     format.html { redirect_to @user, notice: 'User was successfully created.' }
+    #    format.json { render :show, status: :created, location: @user }
+     # else
+      #  format.html { render :new }
+       # format.json { render json: @user.errors, status: :unprocessable_entity }
+      #end
+# end
 
 private
     def set_user

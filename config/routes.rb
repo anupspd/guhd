@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   resources :gh_res
 
   resources :hall_res
@@ -11,7 +13,9 @@ Rails.application.routes.draw do
 
   resources :logins
   resources :users
-resources :home
+  resources :home
+  resources :sessions 
+  get "login", :to => "sessions#new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
