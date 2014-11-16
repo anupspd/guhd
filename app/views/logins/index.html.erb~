@@ -3,6 +3,7 @@
 
 <h1 class="text-center">GOA UNIVERSITY</h1>
 <h1 class="text-center">HELP DESK</h1>
+<hr/>
 <h2 class="form-signin-heading text-center">Please sign in</h2>
   
   
@@ -11,7 +12,7 @@
     <%= password_field "password", "name" , "class" => "form-control" , "placeholder" => "Password"%>
   
   
-    <%= submit_tag "Sign In" , "class" => "btn btn-lg btn-primary btn-block"%>   
+    <%= submit_tag "Sign In" , "class" => "btn btn-lg btn-primary btn-block input"%>   
     
   
 

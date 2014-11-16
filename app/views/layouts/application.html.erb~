@@ -13,15 +13,26 @@
         <nav>
           <ul class="nav navbar-nav pull-right">
             <li><%= link_to "Home",   '../logins' %></li>
-            <li><%= link_to "Register",   '../users' %></li>
-            <li><%= link_to "Log in", '#' %></li>
+            <li><%= link_to "Register",   '../users/new' %></li>
+            
           </ul>
         </nav>
       </div>
     </header>
+<h1 class="text-center">GOA UNIVERSITY</h1>
+<h1 class="text-center">HELP DESK</h1>
+<hr/>
     <div class="container">
       <%= yield %>
     </div>
 
 </body>
+
+   <nav class="navbar navbar-default navbar-fixed-bottom" >
+  <div class="container">
+  
+    <h5 class="text-center"> &copy; GOA UNIVERSITY HELP DESK 2014</h5>
+</div>
+  </nav>
+
 </html>
