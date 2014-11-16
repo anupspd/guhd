@@ -16,7 +16,7 @@
 
   <div class="field">
     
-    <%= f.text_field :name , "class" => "form-control" , "placeholder" => "Name"%>
+    <%= f.text_field :name ,  "placeholder" => "Name"%>
   </div>
   <div class="field">
     
@@ -40,7 +40,7 @@
   
   <div class="field">
     
-    <%= select "designation","name", options_for_select([["HOD",1],["Professor",2],["Associate Prof.",3],["Assistant Prof.",4],["Student",5],["Lab Asst.",6],["Department of English",7]]) %>
+    <%= select "designation","name", options_for_select([["HOD",1],["Professor",2],["Associate Prof.",3],["Assistant Prof.",4],["Student",5],["Lab Asst.",6],["Office Staff",7]]) %>
   </div>
   <div class="actions">
     <%= f.submit "Register" , "class" => "btn btn-lg btn-primary btn-block input"%>   

@@ -12,18 +12,30 @@
     <%= csrf_meta_tags %>
 </head>
 <body>
-<header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Home",   '../login' %></li>
         
-        <nav>
-          <ul class="nav navbar-nav pull-right">
-            <li><%= link_to "Home",   '../logins' %></li>
-            <li><%= link_to "Register",   '../users/new' %></li>
-            
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Reservation <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="../gh_res/new">Guest House Reservation</a></li>
+            <li><a href="../car_res/new">Vehicle Reservation</a></li>
+            <li><a href="../hall_res/new">Seminar Hall Reservation</a></li>
           </ul>
-        </nav>
-      </div>
-    </header>
+        </li>
+<li><%= link_to "Register",   '../users/new' %></li>
+      </ul>
+
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      
+ 
 
 <h1 class="text-center">GOA UNIVERSITY</h1>
 <h1 class="text-center">HELP DESK</h1>
