@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'sessions/new'
 
+root :to => "sessions#new"
   resources :gh_res
 
   resources :hall_res
@@ -11,7 +12,6 @@ Rails.application.routes.draw do
 
   resources :complaints
 
-  resources :logins
   resources :users
   resources :home
   resources :sessions 
