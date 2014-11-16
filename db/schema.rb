@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141116083319) do
+ActiveRecord::Schema.define(version: 20141116053459) do
 
   create_table "car_res", force: true do |t|
     t.string   "reservation_id"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20141116083319) do
   create_table "complaints", force: true do |t|
     t.string   "username"
     t.string   "department"
-    t.string   "compl_type"
+    t.string   "type"
     t.string   "subject"
     t.string   "phone"
     t.datetime "created_at"
@@ -58,16 +58,6 @@ ActiveRecord::Schema.define(version: 20141116083319) do
     t.string   "remember_token"
   end
 
-  create_table "names", force: true do |t|
-    t.string   "email"
-    t.string   "phone"
-    t.string   "address"
-    t.string   "dept"
-    t.string   "designation"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "reservations", force: true do |t|
     t.string   "res_type"
     t.string   "purpose"
@@ -98,7 +88,5 @@ ActiveRecord::Schema.define(version: 20141116083319) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "users", ["email"], name: "email", unique: true, using: :btree
 
 end
