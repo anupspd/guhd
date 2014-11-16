@@ -25,6 +25,8 @@
   </div>
 <div class="field">
     <%= f.label :department %><br>
+<%= select "department","name", options_for_select([["Department of Computer Science & Technology",1],["Department of Management Studies",2],["Department of Physics",3],["Department of Chemistry",4],["Department of Botany",5],["Department of Commerce",6],["Department of English",7]]) %>
+
     <%= f.text_field :department %>
   </div>
   <div class="field">
