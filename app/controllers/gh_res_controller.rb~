@@ -69,6 +69,6 @@ class GhResController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def gh_re_params
-      params.require(:gh_re).permit(:res_type, :purpose, :noOfPpl, :from_date, :to_date, :guestType, :guestName, :guestSex, :guestAge, :guestEMail, :guestPhone)
+      params.require(:gh_re).permit(:reservation_id, :guestType, :guestName, :guestSex, :guestAge, :guestEMail, :guestPhone)
     end
 end

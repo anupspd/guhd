@@ -12,24 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :type %><br>
-    <%= f.text_field :res_type %>
-  </div>
-  <div class="field">
-    <%= f.label :purpose %><br>
-    <%= f.text_field :purpose %>
-  </div>
-  <div class="field">
-    <%= f.label :noOfPpl %><br>
-    <%= f.text_field :noOfPpl %>
-  </div>
-  <div class="field">
-    <%= f.label :from_date %><br>
-    <%= f.text_field :from_date %>
-  </div>
-  <div class="field">
-    <%= f.label :to_date %><br>
-    <%= f.text_field :to_date %>
+    <%= f.label :reservation_id %><br>
+    <%= f.text_field :reservation_id %>
   </div>
   <div class="field">
     <%= f.label :source %><br>
