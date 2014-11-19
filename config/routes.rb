@@ -1,15 +1,13 @@
 Rails.application.routes.draw do
+  resources :guest_house_reservations
+
+  resources :hall_reservations
+
+  resources :car_reservations
+
   get 'sessions/new'
 
 root :to => "sessions#new"
-  resources :gh_res
-
-  resources :hall_res
-
-  resources :car_res
-
-  resources :reservations
-
   resources :complaints
 
   resources :users

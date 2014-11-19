@@ -11,10 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141116083319) do
+ActiveRecord::Schema.define(version: 20141119180924) do
 
-  create_table "car_res", force: true do |t|
-    t.string   "reservation_id"
+  create_table "car_reservations", force: true do |t|
+    t.string   "reservation_date"
+    t.string   "no_of_people"
     t.string   "source"
     t.string   "destination"
     t.datetime "created_at"
@@ -31,21 +32,20 @@ ActiveRecord::Schema.define(version: 20141116083319) do
     t.datetime "updated_at"
   end
 
-  create_table "gh_res", force: true do |t|
-    t.string   "reservation_id"
-    t.string   "guestType"
-    t.string   "guestName"
-    t.string   "guestSex"
-    t.string   "guestAge"
-    t.string   "guestEMail"
-    t.string   "guestPhone"
+  create_table "guest_house_reservations", force: true do |t|
+    t.string   "from_date"
+    t.string   "to_date"
+    t.string   "no_of_guests"
+    t.string   "purpose"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "hall_res", force: true do |t|
-    t.string   "reservation_id"
+  create_table "hall_reservations", force: true do |t|
+    t.string   "reservation_date"
+    t.string   "no_of_people"
     t.string   "hall"
+    t.string   "purpose"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -58,12 +58,12 @@ ActiveRecord::Schema.define(version: 20141116083319) do
     t.string   "remember_token"
   end
 
-  create_table "reservations", force: true do |t|
-    t.string   "res_type"
-    t.string   "purpose"
-    t.string   "noOfPpl"
-    t.string   "from_date"
-    t.string   "to_date"
+  create_table "names", force: true do |t|
+    t.string   "email"
+    t.string   "phone"
+    t.string   "address"
+    t.string   "dept"
+    t.string   "designation"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -87,10 +87,8 @@ ActiveRecord::Schema.define(version: 20141116083319) do
     t.string   "designation"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "remember_token"
   end
 
   add_index "users", ["email"], name: "email", unique: true, using: :btree
-  add_index "users", ["remember_token"], name: "index_users_on_remember_token", using: :btree
 
 end
