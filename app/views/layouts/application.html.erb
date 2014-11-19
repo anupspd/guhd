@@ -12,7 +12,7 @@
     <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" role="navigation" style="margin-top: -40px;">
   <div class="container-fluid">
     
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -27,7 +27,10 @@
             <li><a href="../hall_res/new">Seminar Hall Reservation</a></li>
           </ul>
         </li>
+<li><%= link_to "Complaints",   '../complaints/new' %></li>
 <li><%= link_to "Register",   '../users/new' %></li>
+
+<li><%= link_to "Logout",   '../login' %></li>
       </ul>
 
       
@@ -39,7 +42,7 @@
 
 <h1 class="text-center">GOA UNIVERSITY</h1>
 <h1 class="text-center">HELP DESK</h1>
-<hr/>
+
     <div class="container">
       <%= yield %>
     </div>
